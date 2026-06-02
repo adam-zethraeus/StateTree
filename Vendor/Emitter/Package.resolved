@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "disposable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GoodHatsLLC/Disposable.git",
+      "state" : {
+        "revision" : "a4348e7c8b5e10bd8bc13ef880acd640a9c83104",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
