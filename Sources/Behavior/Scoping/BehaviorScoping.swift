@@ -66,7 +66,7 @@ extension BehaviorScoping {
 // MARK: - ReportingDisposable_HACK
 
 private final class ReportingDisposable_HACK: Disposable {
-  let lock = Locked(false)
+  let lock = Utilities.Locked(false)
 
   var isDisposed: Bool {
     lock.withLock { $0 }

@@ -168,7 +168,7 @@ public final class BehaviorTracker {
   private let behaviorEventSubject = PublishSubject<BehaviorEvent, Never>()
 
   private let behaviorInterceptors: [BehaviorID: BehaviorInterceptor]
-  private var trackedBehaviors: Locked<Set<Behaviors.Resolution>> = .init([])
+  private var trackedBehaviors: Utilities.Locked<Set<Behaviors.Resolution>> = .init([])
   private let tracking: Tracking
 }
 

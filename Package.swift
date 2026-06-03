@@ -102,14 +102,8 @@ let package = Package(
     ),
   ],
   dependencies: [
-    .package(
-      url: "https://github.com/GoodHatsLLC/Disposable.git",
-      "0.8.0" ..< "0.9.0"
-    ),
-    .package(
-      url: "https://github.com/GoodHatsLLC/Emitter.git",
-      "0.8.5" ..< "0.9.0"
-    ),
+    .package(path: "Vendor/Disposable"),
+    .package(path: "Vendor/Emitter"),
     .package(
       url: "https://github.com/apple/swift-collections.git",
       branch: "release/1.1"

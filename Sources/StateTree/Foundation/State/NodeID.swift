@@ -70,7 +70,7 @@ public struct NodeID: TreeState, LosslessStringConvertible, Comparable {
     }
   }
 
-  private static let incrementingForTesting = Locked<Int?>(nil)
+  private static let incrementingForTesting = Utilities.Locked<Int?>(nil)
 
   private static func makeUUID() -> UUID {
     let num = Self.incrementingForTesting.withLock { num in

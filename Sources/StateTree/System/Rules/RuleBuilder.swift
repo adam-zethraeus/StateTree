@@ -36,12 +36,14 @@ public enum RuleBuilder {
     first
   }
 
+  @TreeActor
   public static func buildPartialBlock(accumulated: some Rules, next: some Rules)
     -> some Rules
   {
     TupleRule(rule1: accumulated, rule2: next)
   }
 
+  @TreeActor
   public static func buildOptional(_ component: (some Rules)?) -> some Rules {
     MaybeRule(optionalRules: component)
   }

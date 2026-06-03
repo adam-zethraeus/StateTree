@@ -20,10 +20,7 @@ let package = Package(
     ),
   ],
   dependencies: [
-    .package(
-      url: "https://github.com/GoodHatsLLC/Disposable.git",
-      .upToNextMinor(from: "1.0.0")
-    ),
+    .package(path: "../Disposable"),
   ],
   targets: [
     .target(

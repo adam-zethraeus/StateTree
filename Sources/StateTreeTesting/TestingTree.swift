@@ -187,7 +187,7 @@ public struct TestingTree<NodeType: Node> {
     let line: UInt
   }
 
-  private var state: Locked<State> = .init(.init())
+  private var state: Utilities.Locked<State> = .init(.init())
   private let initialNode: NodeType
   private let moduleFile: String
   private let line: UInt

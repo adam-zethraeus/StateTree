@@ -34,5 +34,5 @@ public final class TestTreeManager {
 
   // MARK: Private
 
-  private let lifetimes = Locked<[AutoDisposable]>([])
+  private let lifetimes = Utilities.Locked<[AutoDisposable]>([])
 }
